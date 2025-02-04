@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Not Defteri</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="app">
+    <h1>Not Defterim</h1>
+    <input type="text" id="note" placeholder="Notunuzu yazın...">
+    <button id="addButton">Ekle</button>
+    <ul id="noteList"></ul>
+  </div>
+
+  <div id="editModal" class="modal">
+    <div class="modal-content">
+      <span class="close" id="closeModal">&times;</span>
+      <h2>Notu Düzenle</h2>
+      <textarea id="editNoteTextarea"></textarea>
+      <button id="saveEditButton">Kaydet</button>
+    </div>
+  </div>
+
+  <script src="renderer.js"></script>
+</body>
+</html>
